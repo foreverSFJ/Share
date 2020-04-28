@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>share.foreversfj.com/books/index.html</loc>
+    
+    <lastmod>2020-04-28T09:44:45.293Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2020-04-28-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0.html</loc>
     
     <lastmod>2020-04-28T09:41:41.430Z</lastmod>
@@ -103,13 +110,6 @@
     <loc>share.foreversfj.com/%E6%8A%80%E8%83%BD/2019-06-07-Git%E5%BF%AB%E6%8D%B7%E4%BD%BF%E7%94%A8.html</loc>
     
     <lastmod>2019-09-03T09:01:14.028Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>share.foreversfj.com/books/index.html</loc>
-    
-    <lastmod>2019-07-31T15:56:26.307Z</lastmod>
     
   </url>
   
