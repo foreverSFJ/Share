@@ -5,9 +5,9 @@
   <subtitle>今夜月色真美，希望风也温柔~~</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="share.foreversfj.com/"/>
-  <updated>2020-04-28T09:41:41.430Z</updated>
-  <id>share.foreversfj.com/</id>
+  <link href="https://share.foreversfj.com/"/>
+  <updated>2020-04-28T11:28:30.782Z</updated>
+  <id>https://share.foreversfj.com/</id>
   
   <author>
     <name>foreverSFJ</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>服务器博客更新</title>
-    <link href="share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2020-04-28-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0.html"/>
-    <id>share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2020-04-28-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0.html</id>
+    <link href="https://share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2020-04-28-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0.html"/>
+    <id>https://share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2020-04-28-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0.html</id>
     <published>2020-04-28T09:17:41.000Z</published>
-    <updated>2020-04-28T09:41:41.430Z</updated>
+    <updated>2020-04-28T11:28:30.782Z</updated>
     
     <content type="html"><![CDATA[<p>使用GitHub作为中转仓库，同时还能保存自己的代码，避免在文件传输过程中的丢失。</p><p>步骤如下：</p><ol><li><p>在自己本地写好博客后顺序执行：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></li><li><p>使用CRT链接服务器</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 进入项目根路径</span></span><br><span class="line"><span class="built_in">cd</span> /var/<span class="built_in">local</span>/webWork/Share</span><br><span class="line"><span class="comment">## 更新</span></span><br><span class="line">git pull https://github.com/foreverSFJ/Share.git</span><br></pre></td></tr></table></figure><blockquote><p>使用本方法需要服务器安装好Git，同时第一次同步需要在项目路径下执行<code>git init</code></p></blockquote></li></ol>]]></content>
     
@@ -32,19 +32,19 @@
     </summary>
     
     
-      <category term="博客" scheme="share.foreversfj.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="https://share.foreversfj.com/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="hexo" scheme="share.foreversfj.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://share.foreversfj.com/tags/hexo/"/>
     
-      <category term="Linux" scheme="share.foreversfj.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://share.foreversfj.com/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>Maupassant主题优化</title>
-    <link href="share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2020-04-28-Maupassant%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96.html"/>
-    <id>share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2020-04-28-Maupassant%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96.html</id>
+    <link href="https://share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2020-04-28-Maupassant%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96.html"/>
+    <id>https://share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2020-04-28-Maupassant%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96.html</id>
     <published>2020-04-28T08:18:11.000Z</published>
     <updated>2020-04-28T09:08:32.086Z</updated>
     
@@ -57,19 +57,19 @@
     </summary>
     
     
-      <category term="博客" scheme="share.foreversfj.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="https://share.foreversfj.com/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="hexo" scheme="share.foreversfj.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://share.foreversfj.com/tags/hexo/"/>
     
-      <category term="Maupassant" scheme="share.foreversfj.com/tags/Maupassant/"/>
+      <category term="Maupassant" scheme="https://share.foreversfj.com/tags/Maupassant/"/>
     
   </entry>
   
   <entry>
     <title>Hexo新建文章</title>
-    <link href="share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0.html"/>
-    <id>share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0.html</id>
+    <link href="https://share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0.html"/>
+    <id>https://share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0.html</id>
     <published>2020-04-28T04:00:20.000Z</published>
     <updated>2020-04-28T04:16:29.049Z</updated>
     
@@ -82,17 +82,17 @@
     </summary>
     
     
-      <category term="博客" scheme="share.foreversfj.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="https://share.foreversfj.com/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="hexo" scheme="share.foreversfj.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://share.foreversfj.com/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hexo配置优化</title>
-    <link href="share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E9%85%8D%E7%BD%AE%E4%BC%98%E5%8C%96.html"/>
-    <id>share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E9%85%8D%E7%BD%AE%E4%BC%98%E5%8C%96.html</id>
+    <link href="https://share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E9%85%8D%E7%BD%AE%E4%BC%98%E5%8C%96.html"/>
+    <id>https://share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E9%85%8D%E7%BD%AE%E4%BC%98%E5%8C%96.html</id>
     <published>2020-04-28T03:09:29.000Z</published>
     <updated>2020-04-28T04:20:14.298Z</updated>
     
@@ -105,17 +105,17 @@
     </summary>
     
     
-      <category term="博客" scheme="share.foreversfj.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="https://share.foreversfj.com/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="hexo" scheme="share.foreversfj.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://share.foreversfj.com/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hexo搭建个人博客</title>
-    <link href="share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html"/>
-    <id>share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html</id>
+    <link href="https://share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html"/>
+    <id>https://share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html</id>
     <published>2020-04-28T02:09:21.000Z</published>
     <updated>2020-04-28T03:08:57.747Z</updated>
     
@@ -128,17 +128,17 @@
     </summary>
     
     
-      <category term="博客" scheme="share.foreversfj.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="https://share.foreversfj.com/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="hexo" scheme="share.foreversfj.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://share.foreversfj.com/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Nginx优化配置</title>
-    <link href="share.foreversfj.com/Linux/2020-04-27-Nginx%E4%BC%98%E5%8C%96%E9%85%8D%E7%BD%AE.html"/>
-    <id>share.foreversfj.com/Linux/2020-04-27-Nginx%E4%BC%98%E5%8C%96%E9%85%8D%E7%BD%AE.html</id>
+    <link href="https://share.foreversfj.com/Linux/2020-04-27-Nginx%E4%BC%98%E5%8C%96%E9%85%8D%E7%BD%AE.html"/>
+    <id>https://share.foreversfj.com/Linux/2020-04-27-Nginx%E4%BC%98%E5%8C%96%E9%85%8D%E7%BD%AE.html</id>
     <published>2020-04-27T15:42:25.000Z</published>
     <updated>2020-04-28T02:10:23.367Z</updated>
     
@@ -151,17 +151,17 @@
     </summary>
     
     
-      <category term="Linux" scheme="share.foreversfj.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://share.foreversfj.com/categories/Linux/"/>
     
     
-      <category term="Nginx" scheme="share.foreversfj.com/tags/Nginx/"/>
+      <category term="Nginx" scheme="https://share.foreversfj.com/tags/Nginx/"/>
     
   </entry>
   
   <entry>
     <title>Nginx入门配置</title>
-    <link href="share.foreversfj.com/Linux/2020-04-27-Nginx%E5%85%A5%E9%97%A8%E9%85%8D%E7%BD%AE.html"/>
-    <id>share.foreversfj.com/Linux/2020-04-27-Nginx%E5%85%A5%E9%97%A8%E9%85%8D%E7%BD%AE.html</id>
+    <link href="https://share.foreversfj.com/Linux/2020-04-27-Nginx%E5%85%A5%E9%97%A8%E9%85%8D%E7%BD%AE.html"/>
+    <id>https://share.foreversfj.com/Linux/2020-04-27-Nginx%E5%85%A5%E9%97%A8%E9%85%8D%E7%BD%AE.html</id>
     <published>2020-04-27T13:42:25.000Z</published>
     <updated>2020-04-28T02:10:09.503Z</updated>
     
@@ -174,17 +174,17 @@
     </summary>
     
     
-      <category term="Linux" scheme="share.foreversfj.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://share.foreversfj.com/categories/Linux/"/>
     
     
-      <category term="Nginx" scheme="share.foreversfj.com/tags/Nginx/"/>
+      <category term="Nginx" scheme="https://share.foreversfj.com/tags/Nginx/"/>
     
   </entry>
   
   <entry>
     <title>Tomcat日志配置</title>
-    <link href="share.foreversfj.com/Linux/2020-04-27-Tomcat%E6%97%A5%E5%BF%97%E9%85%8D%E7%BD%AE.html"/>
-    <id>share.foreversfj.com/Linux/2020-04-27-Tomcat%E6%97%A5%E5%BF%97%E9%85%8D%E7%BD%AE.html</id>
+    <link href="https://share.foreversfj.com/Linux/2020-04-27-Tomcat%E6%97%A5%E5%BF%97%E9%85%8D%E7%BD%AE.html"/>
+    <id>https://share.foreversfj.com/Linux/2020-04-27-Tomcat%E6%97%A5%E5%BF%97%E9%85%8D%E7%BD%AE.html</id>
     <published>2020-04-27T13:02:25.000Z</published>
     <updated>2020-04-28T02:10:31.116Z</updated>
     
@@ -197,17 +197,17 @@
     </summary>
     
     
-      <category term="Linux" scheme="share.foreversfj.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://share.foreversfj.com/categories/Linux/"/>
     
     
-      <category term="Tomcat" scheme="share.foreversfj.com/tags/Tomcat/"/>
+      <category term="Tomcat" scheme="https://share.foreversfj.com/tags/Tomcat/"/>
     
   </entry>
   
   <entry>
     <title>Tomcat入门使用</title>
-    <link href="share.foreversfj.com/Linux/2020-04-27-Tomcat%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8.html"/>
-    <id>share.foreversfj.com/Linux/2020-04-27-Tomcat%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8.html</id>
+    <link href="https://share.foreversfj.com/Linux/2020-04-27-Tomcat%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8.html"/>
+    <id>https://share.foreversfj.com/Linux/2020-04-27-Tomcat%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8.html</id>
     <published>2020-04-27T11:22:25.000Z</published>
     <updated>2020-04-28T02:10:42.119Z</updated>
     
@@ -220,17 +220,17 @@
     </summary>
     
     
-      <category term="Linux" scheme="share.foreversfj.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://share.foreversfj.com/categories/Linux/"/>
     
     
-      <category term="Tomcat" scheme="share.foreversfj.com/tags/Tomcat/"/>
+      <category term="Tomcat" scheme="https://share.foreversfj.com/tags/Tomcat/"/>
     
   </entry>
   
   <entry>
     <title>全新Linux使用入口</title>
-    <link href="share.foreversfj.com/Linux/2020-04-27-%E5%85%A8%E6%96%B0Linux%E4%BD%BF%E7%94%A8%E5%85%A5%E5%8F%A3.html"/>
-    <id>share.foreversfj.com/Linux/2020-04-27-%E5%85%A8%E6%96%B0Linux%E4%BD%BF%E7%94%A8%E5%85%A5%E5%8F%A3.html</id>
+    <link href="https://share.foreversfj.com/Linux/2020-04-27-%E5%85%A8%E6%96%B0Linux%E4%BD%BF%E7%94%A8%E5%85%A5%E5%8F%A3.html"/>
+    <id>https://share.foreversfj.com/Linux/2020-04-27-%E5%85%A8%E6%96%B0Linux%E4%BD%BF%E7%94%A8%E5%85%A5%E5%8F%A3.html</id>
     <published>2020-04-27T02:09:40.000Z</published>
     <updated>2020-04-28T09:36:12.784Z</updated>
     
@@ -243,17 +243,17 @@
     </summary>
     
     
-      <category term="Linux" scheme="share.foreversfj.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://share.foreversfj.com/categories/Linux/"/>
     
     
-      <category term="Tomcat" scheme="share.foreversfj.com/tags/Tomcat/"/>
+      <category term="Tomcat" scheme="https://share.foreversfj.com/tags/Tomcat/"/>
     
   </entry>
   
   <entry>
     <title>如何访问黑暗网络（Deep Web）</title>
-    <link href="share.foreversfj.com/%E6%8A%80%E8%83%BD/2019-06-29-%E5%A6%82%E4%BD%95%E8%AE%BF%E9%97%AE%E9%BB%91%E6%9A%97%E7%BD%91%E7%BB%9C.html"/>
-    <id>share.foreversfj.com/%E6%8A%80%E8%83%BD/2019-06-29-%E5%A6%82%E4%BD%95%E8%AE%BF%E9%97%AE%E9%BB%91%E6%9A%97%E7%BD%91%E7%BB%9C.html</id>
+    <link href="https://share.foreversfj.com/%E6%8A%80%E8%83%BD/2019-06-29-%E5%A6%82%E4%BD%95%E8%AE%BF%E9%97%AE%E9%BB%91%E6%9A%97%E7%BD%91%E7%BB%9C.html"/>
+    <id>https://share.foreversfj.com/%E6%8A%80%E8%83%BD/2019-06-29-%E5%A6%82%E4%BD%95%E8%AE%BF%E9%97%AE%E9%BB%91%E6%9A%97%E7%BD%91%E7%BB%9C.html</id>
     <published>2019-06-29T13:33:15.000Z</published>
     <updated>2019-09-03T11:18:57.125Z</updated>
     
@@ -266,17 +266,17 @@
     </summary>
     
     
-      <category term="技能" scheme="share.foreversfj.com/categories/%E6%8A%80%E8%83%BD/"/>
+      <category term="技能" scheme="https://share.foreversfj.com/categories/%E6%8A%80%E8%83%BD/"/>
     
     
-      <category term="暗网" scheme="share.foreversfj.com/tags/%E6%9A%97%E7%BD%91/"/>
+      <category term="暗网" scheme="https://share.foreversfj.com/tags/%E6%9A%97%E7%BD%91/"/>
     
   </entry>
   
   <entry>
     <title>转-大道至简——Hexo简洁主题推荐</title>
-    <link href="share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2019-06-10-%E8%BD%AC-%E5%A4%A7%E9%81%93%E8%87%B3%E7%AE%80%E2%80%94%E2%80%94Hexo%E7%AE%80%E6%B4%81%E4%B8%BB%E9%A2%98%E6%8E%A8%E8%8D%90.html"/>
-    <id>share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2019-06-10-%E8%BD%AC-%E5%A4%A7%E9%81%93%E8%87%B3%E7%AE%80%E2%80%94%E2%80%94Hexo%E7%AE%80%E6%B4%81%E4%B8%BB%E9%A2%98%E6%8E%A8%E8%8D%90.html</id>
+    <link href="https://share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2019-06-10-%E8%BD%AC-%E5%A4%A7%E9%81%93%E8%87%B3%E7%AE%80%E2%80%94%E2%80%94Hexo%E7%AE%80%E6%B4%81%E4%B8%BB%E9%A2%98%E6%8E%A8%E8%8D%90.html"/>
+    <id>https://share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2019-06-10-%E8%BD%AC-%E5%A4%A7%E9%81%93%E8%87%B3%E7%AE%80%E2%80%94%E2%80%94Hexo%E7%AE%80%E6%B4%81%E4%B8%BB%E9%A2%98%E6%8E%A8%E8%8D%90.html</id>
     <published>2019-06-10T11:30:57.000Z</published>
     <updated>2020-04-28T09:17:24.785Z</updated>
     
@@ -289,17 +289,17 @@
     </summary>
     
     
-      <category term="博客" scheme="share.foreversfj.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="https://share.foreversfj.com/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="hexo" scheme="share.foreversfj.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://share.foreversfj.com/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Git快捷键</title>
-    <link href="share.foreversfj.com/%E6%8A%80%E8%83%BD/2019-06-07-Git%E5%BF%AB%E6%8D%B7%E4%BD%BF%E7%94%A8.html"/>
-    <id>share.foreversfj.com/%E6%8A%80%E8%83%BD/2019-06-07-Git%E5%BF%AB%E6%8D%B7%E4%BD%BF%E7%94%A8.html</id>
+    <link href="https://share.foreversfj.com/%E6%8A%80%E8%83%BD/2019-06-07-Git%E5%BF%AB%E6%8D%B7%E4%BD%BF%E7%94%A8.html"/>
+    <id>https://share.foreversfj.com/%E6%8A%80%E8%83%BD/2019-06-07-Git%E5%BF%AB%E6%8D%B7%E4%BD%BF%E7%94%A8.html</id>
     <published>2019-06-07T11:50:32.000Z</published>
     <updated>2019-09-03T09:01:14.028Z</updated>
     
@@ -312,17 +312,17 @@
     </summary>
     
     
-      <category term="技能" scheme="share.foreversfj.com/categories/%E6%8A%80%E8%83%BD/"/>
+      <category term="技能" scheme="https://share.foreversfj.com/categories/%E6%8A%80%E8%83%BD/"/>
     
     
-      <category term="Git" scheme="share.foreversfj.com/tags/Git/"/>
+      <category term="Git" scheme="https://share.foreversfj.com/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>迁移CSDN文章到本地hexo</title>
-    <link href="share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2019-06-03-%E8%BF%81%E7%A7%BBCSDN%E6%96%87%E7%AB%A0%E5%88%B0%E6%9C%AC%E5%9C%B0hexo.html"/>
-    <id>share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2019-06-03-%E8%BF%81%E7%A7%BBCSDN%E6%96%87%E7%AB%A0%E5%88%B0%E6%9C%AC%E5%9C%B0hexo.html</id>
+    <link href="https://share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2019-06-03-%E8%BF%81%E7%A7%BBCSDN%E6%96%87%E7%AB%A0%E5%88%B0%E6%9C%AC%E5%9C%B0hexo.html"/>
+    <id>https://share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2019-06-03-%E8%BF%81%E7%A7%BBCSDN%E6%96%87%E7%AB%A0%E5%88%B0%E6%9C%AC%E5%9C%B0hexo.html</id>
     <published>2019-06-03T07:12:14.000Z</published>
     <updated>2020-04-28T02:11:36.593Z</updated>
     
@@ -335,10 +335,10 @@
     </summary>
     
     
-      <category term="博客" scheme="share.foreversfj.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="https://share.foreversfj.com/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="hexo" scheme="share.foreversfj.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://share.foreversfj.com/tags/hexo/"/>
     
   </entry>
   
