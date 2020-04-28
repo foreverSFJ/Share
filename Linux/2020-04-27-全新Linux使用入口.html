@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="个人博客，记录生活点滴和各类学习经验"><title>全新Linux使用入口 | foreverSFJ</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.1/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/2.0.4/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.css"><meta name="generator" content="Hexo 4.2.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">全新Linux使用入口</h1><a id="logo" href="/.">foreverSFJ</a><p class="description">今夜月色真美，希望风也温柔~~</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">全新Linux使用入口</h1><div class="post-meta">2020-04-27<span> | </span><span class="category"><a href="/categories/Linux/">Linux</a></span></div><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#更改主机名"><span class="toc-number">1.</span> <span class="toc-text">更改主机名:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#新建root用户"><span class="toc-number">2.</span> <span class="toc-text">新建root用户</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装jdk"><span class="toc-number">3.</span> <span class="toc-text">安装jdk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装Tomcat"><span class="toc-number">4.</span> <span class="toc-text">安装Tomcat</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装nginx1-16"><span class="toc-number">5.</span> <span class="toc-text">安装nginx1.16</span></a></li></ol></div></div><div class="post-content"><h3 id="更改主机名"><a href="#更改主机名" class="headerlink" title="更改主机名:"></a>更改主机名:</h3><ul>
+<li><p>查看当前主机名:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hostname</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>更改 <code>/etc/hostname</code>和<code>/etc/hosts</code>文件, 将文件中的所有主机名更改为需要的主机名</p>
+</li>
+<li><p>重启系统</p>
+</li>
+</ul>
+<h3 id="新建root用户"><a href="#新建root用户" class="headerlink" title="新建root用户"></a>新建root用户</h3><p><strong>（此操作最好在root登录环境下进行</strong>）</p>
+<ul>
+<li><p>添加用户</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd 用户名</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改密码</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">passwd 用户名</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>赋予root权限</p>
+<ul>
+<li><p>修改/etc/sudoers文件，找到root一行，在root下面添加一行：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用户名	ALL=(ALL) 	ALL</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="安装jdk"><a href="#安装jdk" class="headerlink" title="安装jdk"></a>安装jdk</h3><ul>
+<li><p>卸载原生jdk</p>
+<ul>
+<li><p>查询已安装的openjdk</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa | grep java</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>卸载已安装的openjdk</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -e --nodeps xxx.x.x</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>上传jdk的gz包到服务器的<code>/usr/local/java</code>目录下</p>
+</li>
+<li><p>解压该包</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf jdk-xxx.xxx-x64.tar.gz</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置环境变量</p>
+<p>修改配置文件<code>/etc/profile</code>，在末尾加入:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#java environment</span></span><br><span class="line"><span class="keyword">export</span> JAVA_HOME=/usr/local/java/jdk<span class="number">-11.0</span><span class="number">.4</span></span><br><span class="line"><span class="keyword">export</span> CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar</span><br><span class="line"><span class="keyword">export</span> PATH=$PATH:$JAVA_HOME/bin</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>让刚刚设置的环境变量生效</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>检查是否配置成功</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></table></figure>
+
+<p>出现版本信息则为成功，否则失败，检查错误！</p>
+</li>
+</ul>
+<h3 id="安装Tomcat"><a href="#安装Tomcat" class="headerlink" title="安装Tomcat"></a>安装Tomcat</h3><ul>
+<li><p>上传gz包到服务器的<code>/usr/local/soft</code>目录下</p>
+</li>
+<li><p>解压该包</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf apache-tomcat<span class="number">-9.0</span><span class="number">.8</span>.tar.gz</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重命名为tomcat</p>
+</li>
+<li><p>启动测试是否成功</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/soft/tomcat/bin/startup.sh</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>关闭tomcat</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/soft/tomcat/bin/<span class="built_in">shutdown</span>.sh</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置tomcat环境变量</p>
+<ul>
+<li><p>在<code>/etc/profile</code>最后添加:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> CATALINA_HOME=/usr/local/soft/tomcat</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置文件即时生效</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>配置tomcat快捷启动</p>
+<ul>
+<li><p>把tomcat的脚本文件拷一份到/etc/init.d目录</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp /usr/local/soft/tomcat/bin/catalina.sh /etc/init.d/tomcat</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>把改脚本授权给所有用户执行</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod <span class="number">755</span> /etc/init.d/tomcat</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在脚本中添加配置（必须在开头）</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#chkconfig: 2345 10 90</span></span><br><span class="line"><span class="meta">#description: tomcat service</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">export</span> JAVA_HOME=/usr/local/java/jdk<span class="number">-11.0</span><span class="number">.4</span></span><br><span class="line"><span class="keyword">export</span> CATALINA_HOME=/usr/local/soft/tomcat/</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>刷新服务并开机启动</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chkconfig --add tomcat</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>启动/关闭</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">service tomcat start</span><br><span class="line">service tomcat <span class="built_in">stop</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>端口配置（需要在服务器提供商的控制台提前开放这些端口）</p>
+<ul>
+<li><p>开放80和8080端口</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --zone=<span class="keyword">public</span> --add-port=<span class="number">80</span>/tcp --permanent</span><br><span class="line">firewall-cmd --zone=<span class="keyword">public</span> --add-port=<span class="number">8080</span>/tcp --permanent</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重新载入</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>开机启用</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable firewalld</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看状态</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status firewalld</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看端口信息</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --<span class="built_in">list</span>-all</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="安装nginx1-16"><a href="#安装nginx1-16" class="headerlink" title="安装nginx1.16"></a>安装nginx1.16</h3><ul>
+<li><p>安装各种依赖</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#gcc安装，nginx源码编译需要</span></span><br><span class="line">yum install gcc-c++</span><br><span class="line"></span><br><span class="line">#PCRE pcre-devel 安装，nginx 的 http 模块使用 pcre 来解析正则表达式</span><br><span class="line">yum install -y pcre pcre-devel</span><br><span class="line"></span><br><span class="line"><span class="meta">#zlib安装，nginx 使用zlib对http包的内容进行gzip</span></span><br><span class="line">yum install -y zlib zlib-devel</span><br><span class="line"></span><br><span class="line">#OpenSSL 安装，强大的安全套接字层密码库，nginx 不仅支持 http 协议，还支持 https（即在ssl协议上传输http）</span><br><span class="line">yum install -y openssl openssl-devel</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>上传gz包到服务器的<code>/usr/local/soft</code>目录下</p>
+</li>
+<li><p>解压</p>
+</li>
+<li><p>使用默认配置安装</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/soft/nginx/configure</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>快捷使用nginx命令</p>
+<ul>
+<li><p>修改环境变量配置文件<code>/etc/profile</code>，在path后添加<code>:$Path:/usr/local/nginx/sbin</code></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PATH=$PATH:$JAVA_HOME/bin:$Path:/usr/local/nginx/sbin</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重新生效</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>测试启动</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nginx -t</span><br><span class="line">nginx</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>关闭</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -s quit</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</div><div class="tags"><a href="/tags/Tomcat/"><i class="fa fa-tag"></i>Tomcat</a></div><div class="post-nav"><a class="pre" href="/Linux/2020-04-27-Tomcat%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8.html">Tomcat入门使用</a><a class="next" href="/%E6%8A%80%E8%83%BD/2019-06-29-%E5%A6%82%E4%BD%95%E8%AE%BF%E9%97%AE%E9%BB%91%E6%9A%97%E7%BD%91%E7%BB%9C.html">如何访问黑暗网络（Deep Web）</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="share.foreversfj.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%80%E8%83%BD/">技能</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/Git/" style="font-size: 15px;">Git</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/Nginx/" style="font-size: 15px;">Nginx</a> <a href="/tags/Tomcat/" style="font-size: 15px;">Tomcat</a> <a href="/tags/%E6%9A%97%E7%BD%91/" style="font-size: 15px;">暗网</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0.html">Hexo新建文章</a></li><li class="post-list-item"><a class="post-list-link" href="/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E9%85%8D%E7%BD%AE%E4%BC%98%E5%8C%96.html">Hexo配置优化</a></li><li class="post-list-item"><a class="post-list-link" href="/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html">Hexo搭建个人博客</a></li><li class="post-list-item"><a class="post-list-link" href="/Linux/2020-04-27-Nginx%E4%BC%98%E5%8C%96%E9%85%8D%E7%BD%AE.html">Nginx优化配置</a></li><li class="post-list-item"><a class="post-list-link" href="/Linux/2020-04-27-Nginx%E5%85%A5%E9%97%A8%E9%85%8D%E7%BD%AE.html">Nginx入门配置</a></li><li class="post-list-item"><a class="post-list-link" href="/Linux/2020-04-27-Tomcat%E6%97%A5%E5%BF%97%E9%85%8D%E7%BD%AE.html">Tomcat日志配置</a></li><li class="post-list-item"><a class="post-list-link" href="/Linux/2020-04-27-Tomcat%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8.html">Tomcat入门使用</a></li><li class="post-list-item"><a class="post-list-link" href="/Linux/2020-04-27-%E5%85%A8%E6%96%B0Linux%E4%BD%BF%E7%94%A8%E5%85%A5%E5%8F%A3.html">全新Linux使用入口</a></li><li class="post-list-item"><a class="post-list-link" href="/%E6%8A%80%E8%83%BD/2019-06-29-%E5%A6%82%E4%BD%95%E8%AE%BF%E9%97%AE%E9%BB%91%E6%9A%97%E7%BD%91%E7%BB%9C.html">如何访问黑暗网络（Deep Web）</a></li><li class="post-list-item"><a class="post-list-link" href="/%E5%8D%9A%E5%AE%A2/2019-06-10-%E8%BD%AC-%E5%A4%A7%E9%81%93%E8%87%B3%E7%AE%80%E2%80%94%E2%80%94Hexo%E7%AE%80%E6%B4%81%E4%B8%BB%E9%A2%98%E6%8E%A8%E8%8D%90.html">转-大道至简——Hexo简洁主题推荐</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">foreverSFJ.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>

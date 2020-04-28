@@ -1,0 +1,92 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="个人博客，记录生活点滴和各类学习经验"><title>Hexo配置优化 | foreverSFJ</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.1/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/2.0.4/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.css"><meta name="generator" content="Hexo 4.2.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Hexo配置优化</h1><a id="logo" href="/.">foreverSFJ</a><p class="description">今夜月色真美，希望风也温柔~~</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Hexo配置优化</h1><div class="post-meta">2020-04-28<span> | </span><span class="category"><a href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a></span></div><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-hexo基本配置"><span class="toc-number">1.</span> <span class="toc-text">1. hexo基本配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-网站"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 网站</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-网址"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 网址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-其他"><span class="toc-number">1.3.</span> <span class="toc-text">1.3 其他</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-主题更换"><span class="toc-number">2.</span> <span class="toc-text">2. 主题更换</span></a></li></ol></div></div><div class="post-content"><h1 id="1-hexo基本配置"><a href="#1-hexo基本配置" class="headerlink" title="1. hexo基本配置"></a>1. hexo基本配置</h1><p>在文件根目录下的<code>_config.yml</code>，就是整个hexo框架的配置文件了。可以在里面修改大部分的配置。详细可参考<a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">官方的配置</a>描述。</p>
+<h2 id="1-1-网站"><a href="#1-1-网站" class="headerlink" title="1.1 网站"></a>1.1 网站</h2><table>
+<thead>
+<tr>
+<th align="center">参数</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>title</code></td>
+<td align="center">网站标题</td>
+</tr>
+<tr>
+<td align="center"><code>subtitle</code></td>
+<td align="center">网站副标题</td>
+</tr>
+<tr>
+<td align="center"><code>description</code></td>
+<td align="center">网站描述</td>
+</tr>
+<tr>
+<td align="center"><code>author</code></td>
+<td align="center">您的名字</td>
+</tr>
+<tr>
+<td align="center"><code>language</code></td>
+<td align="center">网站使用的语言</td>
+</tr>
+<tr>
+<td align="center"><code>timezone</code></td>
+<td align="center">网站时区。Hexo 默认使用您电脑的时区。<a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank" rel="noopener">时区列表</a>。比如说：<code>America/New_York</code>, <code>Japan</code>, 和 <code>UTC</code> 。</td>
+</tr>
+</tbody></table>
+<p>其中，<code>description</code>主要用于SEO，告诉搜索引擎一个关于您站点的简单描述，通常建议在其中包含您网站的关键词。<code>author</code>参数用于主题显示文章的作者。</p>
+<h2 id="1-2-网址"><a href="#1-2-网址" class="headerlink" title="1.2 网址"></a>1.2 网址</h2><table>
+<thead>
+<tr>
+<th align="center">参数</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>url</code></td>
+<td align="center">网址</td>
+</tr>
+<tr>
+<td align="center"><code>root</code></td>
+<td align="center">网站根目录</td>
+</tr>
+<tr>
+<td align="center"><code>permalink</code></td>
+<td align="center">文章的 <a href="https://hexo.io/zh-cn/docs/permalinks" target="_blank" rel="noopener">永久链接</a> 格式</td>
+</tr>
+<tr>
+<td align="center"><code>permalink_defaults</code></td>
+<td align="center">永久链接中各部分的默认值</td>
+</tr>
+</tbody></table>
+<p>在这里，你需要把url改成你的网站域名。</p>
+<p>permalink，也就是你生成某个文章时的那个链接格式。</p>
+<p>比如我新建一个文章叫temp.md，那么这个时候他自动生成的地址就是<a href="http://yoursite.com/2018/09/05/temp。" target="_blank" rel="noopener">http://yoursite.com/2018/09/05/temp。</a></p>
+<p>以下是官方给出的示例，关于链接的变量还有很多，需要的可以去官网上查找<a href="https://hexo.io/zh-cn/docs/permalinks" target="_blank" rel="noopener">永久链接 </a>。</p>
+<table>
+<thead>
+<tr>
+<th align="center">参数</th>
+<th align="center">结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>:year/:month/:day/:title/</code></td>
+<td align="center">2013/07/14/hello-world</td>
+</tr>
+<tr>
+<td align="center"><code>:year-:month-:day-:title.html</code></td>
+<td align="center">2013-07-14-hello-world.html</td>
+</tr>
+<tr>
+<td align="center"><code>:category/:title</code></td>
+<td align="center">foo/bar/hello-world</td>
+</tr>
+</tbody></table>
+<h2 id="1-3-其他"><a href="#1-3-其他" class="headerlink" title="1.3 其他"></a>1.3 其他</h2><p>再往下翻，中间这些都默认就好了。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">landscape</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&lt;repository</span> <span class="string">url&gt;</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">[branch]</span></span><br></pre></td></tr></table></figure>
+
+<p>theme就是选择什么主题，也就是在theme这个文件夹下，在官网上有很多个主题，默认给你安装的是lanscape这个主题。当你需要更换主题时，在官网上下载，把主题的文件放在theme文件夹下，再修改这个参数就可以了。</p>
+<p>接下来这个deploy就是网站的部署的，repo就是仓库(Repository)的简写。branch选择仓库的哪个分支。这个在<a href="../Hexo搭建个人博客">之前进行github</a>的时候已经修改过了，不再赘述。而这个在后面进行双平台部署的时候会再次用到。</p>
+<h1 id="2-主题更换"><a href="#2-主题更换" class="headerlink" title="2. 主题更换"></a>2. 主题更换</h1><p>如果你觉得默认的<code>landscape</code>主题不好看，那么可以在官网的主题中，选择你喜欢的一个主题进行修改就可以啦。<a href="https://hexo.io/themes/" target="_blank" rel="noopener">点这里</a></p>
+<p><img src="http://cdn.foreversfj.com/image/blog/20200428/n9PtptfIevaL.png!share" alt=""></p>
+<p>这里有200多个主题可以选。不过最受欢迎的就是那么几个，比如<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">NexT主题</a>，非常的简洁好看，大多数人都选择这个，关于这个的教程也比较多。不过我选择的是[<a href="https://github.com/tufu9441/maupassant-hexo" target="_blank" rel="noopener">maupassant</a>这个主题，由<a href="https://github.com/pagecho/" target="_blank" rel="noopener">Cho</a>大神为<a href="http://typecho.org/" target="_blank" rel="noopener">Typecho</a>平台设计开发的一套响应式模板，体积只有20KB，在各种尺寸的设备上表现出色。由于其简洁大气的风格受到许多用户喜爱，目前也已经被移植到了多个平台上，<a href="https://www.haomwei.com/technology/maupassant-hexo.html" target="_blank" rel="noopener">展示效果</a>.</p>
+<p>具体的主题使用方法及配置<a href="转-大道至简——Hexo简洁主题推荐/">详见</a>。</p>
+</div><div class="tags"><a href="/tags/hexo/"><i class="fa fa-tag"></i>hexo</a></div><div class="post-nav"><a class="pre" href="/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0.html">Hexo新建文章</a><a class="next" href="/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html">Hexo搭建个人博客</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="share.foreversfj.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%80%E8%83%BD/">技能</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/Git/" style="font-size: 15px;">Git</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/Nginx/" style="font-size: 15px;">Nginx</a> <a href="/tags/Tomcat/" style="font-size: 15px;">Tomcat</a> <a href="/tags/%E6%9A%97%E7%BD%91/" style="font-size: 15px;">暗网</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0.html">Hexo新建文章</a></li><li class="post-list-item"><a class="post-list-link" href="/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E9%85%8D%E7%BD%AE%E4%BC%98%E5%8C%96.html">Hexo配置优化</a></li><li class="post-list-item"><a class="post-list-link" href="/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html">Hexo搭建个人博客</a></li><li class="post-list-item"><a class="post-list-link" href="/Linux/2020-04-27-Nginx%E4%BC%98%E5%8C%96%E9%85%8D%E7%BD%AE.html">Nginx优化配置</a></li><li class="post-list-item"><a class="post-list-link" href="/Linux/2020-04-27-Nginx%E5%85%A5%E9%97%A8%E9%85%8D%E7%BD%AE.html">Nginx入门配置</a></li><li class="post-list-item"><a class="post-list-link" href="/Linux/2020-04-27-Tomcat%E6%97%A5%E5%BF%97%E9%85%8D%E7%BD%AE.html">Tomcat日志配置</a></li><li class="post-list-item"><a class="post-list-link" href="/Linux/2020-04-27-Tomcat%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8.html">Tomcat入门使用</a></li><li class="post-list-item"><a class="post-list-link" href="/Linux/2020-04-27-%E5%85%A8%E6%96%B0Linux%E4%BD%BF%E7%94%A8%E5%85%A5%E5%8F%A3.html">全新Linux使用入口</a></li><li class="post-list-item"><a class="post-list-link" href="/%E6%8A%80%E8%83%BD/2019-06-29-%E5%A6%82%E4%BD%95%E8%AE%BF%E9%97%AE%E9%BB%91%E6%9A%97%E7%BD%91%E7%BB%9C.html">如何访问黑暗网络（Deep Web）</a></li><li class="post-list-item"><a class="post-list-link" href="/%E5%8D%9A%E5%AE%A2/2019-06-10-%E8%BD%AC-%E5%A4%A7%E9%81%93%E8%87%B3%E7%AE%80%E2%80%94%E2%80%94Hexo%E7%AE%80%E6%B4%81%E4%B8%BB%E9%A2%98%E6%8E%A8%E8%8D%90.html">转-大道至简——Hexo简洁主题推荐</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">foreverSFJ.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="个人博客，记录生活点滴和各类学习经验"><title>Git快捷键 | foreverSFJ</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.1/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/2.0.4/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.css"><meta name="generator" content="Hexo 4.2.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Git快捷键</h1><a id="logo" href="/.">foreverSFJ</a><p class="description">今夜月色真美，希望风也温柔~~</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Git快捷键</h1><div class="post-meta">2019-06-07<span> | </span><span class="category"><a href="/categories/%E6%8A%80%E8%83%BD/">技能</a></span></div><div class="post-content"><h2 id="CREATE-创建"><a href="#CREATE-创建" class="headerlink" title="CREATE        创建"></a>CREATE        创建</h2><ul>
+<li><p><strong>Clone an existing repository         克隆现有存储库</strong></p>
+<ul>
+<li><code>$ git clone ssh://user@domain.com/repo.git</code></li>
+</ul>
+</li>
+<li><p><strong>Create a new local repository         创建一个新的本地存储库</strong></p>
+<ul>
+<li><code>$ git init</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="LOCAL-CHANGES-局部变化"><a href="#LOCAL-CHANGES-局部变化" class="headerlink" title="LOCAL CHANGES            局部变化"></a>LOCAL CHANGES            局部变化</h2><ul>
+<li><p><strong>Changed files in your working directory            更改了工作目录中的文件</strong></p>
+<ul>
+<li><code>$ git status</code></li>
+</ul>
+</li>
+<li><p><strong>Changes to tracked files         对已跟踪文件的更改</strong></p>
+<ul>
+<li><code>$ git diff</code></li>
+</ul>
+</li>
+<li><p><strong>Add all current changes to the next commit         将所有当前更改添加到下一个提交</strong></p>
+<ul>
+<li><code>$ git  add .</code></li>
+</ul>
+</li>
+<li><p><strong>Add some changes in  &lt;file&gt; to the next commit         在&lt; file &gt;中添加一些更改到下一次提交</strong></p>
+<ul>
+<li><code>$ git add -p &lt;file&gt;</code></li>
+</ul>
+</li>
+<li><p><strong>Commit all local changes in tracked files         提交跟踪文件中的所有本地更改</strong></p>
+<ul>
+<li><code>$ git commit -a</code></li>
+</ul>
+</li>
+<li><p><strong>Commit previously staged changes         提交以前上演的更改</strong></p>
+<ul>
+<li><code>$ git commit</code></li>
+</ul>
+</li>
+<li><p><strong>Change the last commit [Don‘t amend published commits!]         更改上次提交[不修改已发布的提交!]</strong></p>
+<ul>
+<li><code>$ git commit --amend</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="COMMIT-HISTORY-提交历史记录"><a href="#COMMIT-HISTORY-提交历史记录" class="headerlink" title="COMMIT HISTORY        提交历史记录"></a>COMMIT HISTORY        提交历史记录</h2><ul>
+<li><p><strong>Show all commits, starting with newest         显示所有提交，从最新开始</strong></p>
+<ul>
+<li><code>$ git log</code></li>
+</ul>
+</li>
+<li><p><strong>Show changes over time for a specific file         显示特定文件随时间的变化</strong></p>
+<ul>
+<li><code>$ git log -p &lt;file&gt;</code></li>
+</ul>
+</li>
+<li><p><strong>Who changed what and when in &lt;file&gt;         谁更改了&lt;file&gt;中的内容和时间</strong></p>
+<ul>
+<li><code>$ git blame &lt;file&gt;</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="BRANCHES-amp-TAGS-分支标签"><a href="#BRANCHES-amp-TAGS-分支标签" class="headerlink" title="BRANCHES &amp; TAGS        分支标签"></a>BRANCHES &amp; TAGS        分支标签</h2><ul>
+<li><p><strong>List all existing branches         列出所有现有分支机构</strong></p>
+<ul>
+<li><code>$ git branch -av</code></li>
+</ul>
+</li>
+<li><p><strong>Switch HEAD branch         切换HEAD分支</strong></p>
+<ul>
+<li><code>$ git checkout &lt;branch&gt;</code></li>
+</ul>
+</li>
+<li><p><strong>Create a new branch based on your current HEAD         根据您当前的HEAD创建一个新分支</strong></p>
+<ul>
+<li><code>$ git  branch &lt;new-branch&gt;</code></li>
+</ul>
+</li>
+<li><p><strong>Create a new tracking branch based on  a remote branch         基于远程分支创建新的跟踪分支</strong></p>
+<ul>
+<li><code>$ git checkout --track &lt;remote/bran-ch&gt;</code></li>
+</ul>
+</li>
+<li><p><strong>Delete a local branch         删除本地分支</strong></p>
+<ul>
+<li><code>$ git branch -d &lt;branch&gt;</code></li>
+</ul>
+</li>
+<li><p><strong>Mark the current commit with a tag         使用标记标记当前提交</strong></p>
+<ul>
+<li><code>$ git tag &lt;tag-name&gt;</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="BRANCHES-amp-TAGS"><a href="#BRANCHES-amp-TAGS" class="headerlink" title="BRANCHES &amp; TAGS"></a>BRANCHES &amp; TAGS</h2><ul>
+<li><p><strong>List all currently configured remotes         列出所有当前配置的遥控器</strong></p>
+<ul>
+<li><code>$ git remote -v</code></li>
+</ul>
+</li>
+<li><p><strong>Show information about a remote         显示有关遥控器的信息</strong></p>
+<ul>
+<li><code>$ git remote show &lt;remote&gt;</code></li>
+</ul>
+</li>
+<li><p><strong>Add new remote repository, named &lt;remote&gt;         添加名为&lt;remote&gt;的新远程存储库</strong></p>
+<ul>
+<li><code>$ git remote add &lt;shortname&gt; &lt;url&gt;</code></li>
+</ul>
+</li>
+<li><p><strong>Download all changes from &lt;remote&gt;,   but don’t integrate into HEAD         从&lt; remote&gt;下载所有更改，但不要集成到HEAD中</strong></p>
+<ul>
+<li><code>$ git fetch &lt;remote&gt;</code></li>
+</ul>
+</li>
+<li><p><strong>Download changes and directly merge/integrate  into  HEAD         下载更改并直接合并集成到HEAD中</strong></p>
+<ul>
+<li><code>$ git pull &lt;remote&gt; &lt;branch&gt;</code></li>
+</ul>
+</li>
+<li><p><strong>Publish local changes on a remote         在远程上发布本地更改</strong></p>
+<ul>
+<li><code>$ git push &lt;remote&gt; &lt;branch&gt;</code></li>
+</ul>
+</li>
+<li><p><strong>Delete a branch on the remote         删除遥控器上的分支</strong></p>
+<ul>
+<li><code>$ git branch -dr &lt;remote/branch&gt;</code></li>
+</ul>
+</li>
+<li><p><strong>Publish your tags         发布你的标签</strong></p>
+<ul>
+<li><code>$ git push --tags</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="BRANCHES-amp-TAGS-1"><a href="#BRANCHES-amp-TAGS-1" class="headerlink" title="BRANCHES &amp; TAGS"></a>BRANCHES &amp; TAGS</h2><ul>
+<li><p><strong>Merge &lt;branch&gt; into your current HEAD         将&lt; branch&gt;合并到当前的HEAD中</strong></p>
+<ul>
+<li><code>$ git merge &lt;branch&gt;</code></li>
+</ul>
+</li>
+<li><p><strong>Rebase your current HEAD onto &lt;branch&gt; Don‘t rebase published commits!         将您当前的HEAD重新定位到&lt;branch&gt;不要重新发布已发布的提交！</strong></p>
+<ul>
+<li><code>$ git rebase &lt;branch&gt;</code></li>
+</ul>
+</li>
+<li><p><strong>Abort a rebase         中止重置</strong></p>
+<ul>
+<li><code>$ git rebase --abort</code></li>
+</ul>
+</li>
+<li><p><strong>Continue a rebase after resolving conflicts         解决冲突后继续使用重置</strong></p>
+<ul>
+<li><code>$ git rebase --continue</code></li>
+</ul>
+</li>
+<li><p><strong>Use your configured merge tool to  solve conflicts         使用您配置的合并工具来解决冲突</strong></p>
+<ul>
+<li><code>$ git mergetool</code></li>
+</ul>
+</li>
+<li><p><strong>Use your editor to manually solve conflicts and  (after resolving) mark file as resolved         使用您的编辑器手动解决冲突和（解析后）标记文件已解决</strong></p>
+<ul>
+<li><code>$ git add &lt;resolved-file&gt;</code></li>
+<li><code>$ git rm &lt;resolved-file&gt;</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="UNDO-撤消"><a href="#UNDO-撤消" class="headerlink" title="UNDO        撤消"></a>UNDO        撤消</h2><ul>
+<li><p><strong>Discard all local changes in your working  directory         放弃工作目录中的所有本地更改</strong></p>
+<ul>
+<li><code>$ git reset --hard HEAD</code></li>
+</ul>
+</li>
+<li><p><strong>Discard local changes in a specific file          放弃特定文件中的本地更改</strong></p>
+<ul>
+<li><code>$ git checkout HEAD &lt;file&gt;</code></li>
+</ul>
+</li>
+<li><p><strong>Revert a commit  (by producing a new commit with contrary changes)         恢复提交（通过生成相反更改的新提交）</strong></p>
+<ul>
+<li><code>$ git revert &lt;commit&gt;</code></li>
+</ul>
+</li>
+<li><p><strong>Reset your HEAD pointer to a previous commit …and discard all changes since then         将HEAD指针重置为先前的提交…并放弃此后的所有更改</strong></p>
+<ul>
+<li><code>$ git reset --hard &lt;commit&gt;</code></li>
+</ul>
+</li>
+<li><p><strong>…and preserve all changes as unstaged changes          …并将所有更改保留为未分级更改</strong></p>
+<ul>
+<li><code>$ git reset &lt;commit&gt;</code></li>
+</ul>
+</li>
+<li><p><strong>…and preserve uncommitted local changes         …并保留未提交的本地更改</strong></p>
+<ul>
+<li><code>$ git reset --keep &lt;commit&gt;</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="COMMIT-RELATED-CHANGES-提交相关更改"><a href="#COMMIT-RELATED-CHANGES-提交相关更改" class="headerlink" title="COMMIT RELATED CHANGES        提交相关更改"></a>COMMIT RELATED CHANGES        提交相关更改</h2><p>&emsp;&emsp;<code>A commit should be a wrapper for related changes. For example, fixing two different bugs should produce two separate commits. Small commits make it easier for other de-velopers to understand the changes and roll them back if something went wrong.</code><br>&emsp;&emsp;提交应该是相关更改的包装器。例如，修复两个不同的错误应该产生两个单独的提交。小的提交使其他开发人员更容易理解变化，并在出现问题时将其回滚。<br>&emsp;&emsp;<code>With tools like the staging area and the abi-lity to stage only parts of a file, Git makes it easy to create very granular commits.</code><br>&emsp;&emsp;使用暂存区域和abi-lity等工具只能部署文件的一部分，Git可以轻松创建非常精细的提交。</p>
+<h2 id="COMMIT-OFTEN-承诺"><a href="#COMMIT-OFTEN-承诺" class="headerlink" title="COMMIT OFTEN         承诺"></a>COMMIT OFTEN         承诺</h2><p>&emsp;&emsp;<code>Committing often keeps your commits small and, again, helps you commit only related changes. Moreover, it allows you to share your code more frequently with others. That way it‘s easier for everyone to integrate changes regularly and avoid having merge conflicts. Having few large commits and sharing them rarely, in contrast, makes it hard to solve conflicts.</code><br>&emsp;&emsp;提交通常会使您的提交变小，并且再次帮助您仅提交相关更改。此外，它允许您更频繁地与他人共享您的代码。这样，每个人都可以更容易地定期集成更改并避免出现合并冲突。相比之下，很少有大型提交并且很少共享它们使解决冲突变得困难。</p>
+<h2 id="DON’T-COMMIT-HALF-DONE-WORK-不要做半途而废的工作"><a href="#DON’T-COMMIT-HALF-DONE-WORK-不要做半途而废的工作" class="headerlink" title="DON’T COMMIT HALF-DONE WORK         不要做半途而废的工作"></a>DON’T COMMIT HALF-DONE WORK         不要做半途而废的工作</h2><p>&emsp;&emsp;<code>You should only commit code when it‘s completed. This doesn‘t mean you have to complete a whole, large feature before committing. Quite the contrary: split the feature‘s implementation into logical chunks and remember to commit early and often. But don‘t commit just to have something in the repository before leaving the office at the end of the day. If you‘re tempted to commit just because you need a clean working copy (to check out a branch, pull in changes, etc.) consider using Git‘s «Stash» feature instead.</code><br>&emsp;&emsp;您应该只在代码完成时提交代码。这并不意味着您必须在提交之前完成整个大型功能。恰恰相反：将功能的实现拆分为逻辑块，并记住提前和经常提交。但是，在一天结束离开办公室之前，不要仅仅在存储库中提供一些东西。如果您因为需要干净的工作副本（检查分支，引入更改等）而想要提交，请考虑使用Git的“Stash”功能。</p>
+<h2 id="TEST-CODE-BEFORE-YOU-COMMIT-提交前测试代码"><a href="#TEST-CODE-BEFORE-YOU-COMMIT-提交前测试代码" class="headerlink" title="TEST CODE BEFORE YOU COMMIT             提交前测试代码"></a>TEST CODE BEFORE YOU COMMIT             提交前测试代码</h2><p>&emsp;&emsp;<code>Resist the temptation to commit some-thing that you «think» is completed. Test it thoroughly to make sure it really is completed and has no side effects (as far as one can tell). While committing half-baked things in your local repository only requires you to forgive yourself, having your code tested is even more important when it comes to pushing/sharing your code with others.</code><br>&emsp;&emsp;抵制诱惑你做出“思考”完成的事情。彻底测试，以确保它真的完成，没有副作用（据我们所知）。虽然在本地存储库中提交半生不熟的东西只需要您原谅自己，但在推送与他人共享代码时，测试代码会更加重要。</p>
+<h2 id="WRITE-GOOD-COMMIT-MESSAGES-编写好的提交消息"><a href="#WRITE-GOOD-COMMIT-MESSAGES-编写好的提交消息" class="headerlink" title="WRITE GOOD COMMIT MESSAGES             编写好的提交消息"></a>WRITE GOOD COMMIT MESSAGES             编写好的提交消息</h2><p>&emsp;&emsp;<code>Begin your message with a short summary of your changes (up to 50 characters as a gui-deline). Separate it from the following body by including a blank line. The body of your message should provide detailed answers to the following questions:</code><br>&emsp;&emsp;以您的更改的简短摘要开始您的消息（最多50个字符作为gui-deline）。通过包含空行将其与以下主体分开。您的信息正文应提供以下问题的详细答案：<br>&emsp;&emsp;* <code>What was the motivation for the change?</code><br>&emsp;&emsp;改变的动机是什么？<br>&emsp;&emsp;* <code>How does it differ from the previousimplementation?</code><br>&emsp;&emsp;它与以前的实现有何不同？<br>&emsp;&emsp;<code>Use the imperative, present tense («change», not «changed» or «changes») to be consistent with generated messages from commands like git merge.</code><br>&emsp;&emsp;使用命令式，现在时（“更改”，而不是“更改”或“更改”）与来自git merge等命令的生成消息一致。</p>
+<h2 id="VERSION-CONTROL-IS-NOT-A-BACKUP-SYSTEM-版本控制不是备份系统"><a href="#VERSION-CONTROL-IS-NOT-A-BACKUP-SYSTEM-版本控制不是备份系统" class="headerlink" title="VERSION CONTROL IS NOT A BACKUP SYSTEM         版本控制不是备份系统"></a>VERSION CONTROL IS NOT A BACKUP SYSTEM         版本控制不是备份系统</h2><p>&emsp;&emsp;<code>Having your files backed up on a remote server is a nice side effect of having a version control system. But you should not use your VCS like it was a backup system. When doing version control, you should pay attention to committing semantically (see «related chan-ges») - you shouldn‘t just cram in files.</code><br>&emsp;&emsp;在远程服务器上备份文件是拥有版本控制系统的一个很好的副作用。但是你不应该使用你的VCS，就像它是一个备份系统。在进行版本控制时，你应该注意语义上的提交（参见“相关的chan-ges”） - 你不应该只是填入文件。</p>
+<h2 id="USE-BRANCHES-使用分支"><a href="#USE-BRANCHES-使用分支" class="headerlink" title="USE BRANCHES         使用分支"></a>USE BRANCHES         使用分支</h2><p>&emsp;&emsp;<code>Branching is one of Git‘s most powerful features - and this is not by accident: quick and easy branching was a central requirement from day one. Branches are the perfect tool to help you avoid mixing up different lines of development. You should use branches extensively in your development workflows: for new features, bug fixes, ideas…</code><br>&emsp;&emsp;分支是Git最强大的功能之一 - 这不是偶然的：从第一天开始，快速简便的分支是一个核心要求。分支机构是帮助您避免混淆不同开发线的完美工具。您应该在开发工作流程中广泛使用分支：新功能，错误修复，想法……</p>
+<h2 id="AGREE-ON-A-WORKFLOW-商定工作流程"><a href="#AGREE-ON-A-WORKFLOW-商定工作流程" class="headerlink" title="AGREE ON A WORKFLOW 商定工作流程"></a>AGREE ON A WORKFLOW 商定工作流程</h2><p>&emsp;&emsp;<code>Git lets you pick from a lot of different work-flows: long-running branches, topic bran-ches, merge or rebase, git-flow… Which one you choose depends on a couple of factors: your project, your overall development and deployment workflows and (maybe most importantly) on your and your teammates‘ personal preferences. However you choose to work, just make sure to agree on a common workflow that everyone follows.</code><br>&emsp;&emsp;Git允许您从许多不同的工作流程中选择：长期运行的分支，主题分支，合并或变基，git-flow ……您选择哪一个取决于几个因素：您的项目，整体开发和部署工作流程和（可能最重要的）你和​​你的队友的个人偏好。无论您选择工作，只需确保就每个人都遵循的共同工作流程达成一致。</p>
+<h2 id="HELP-amp-DOCUMENTATION-帮助和文档"><a href="#HELP-amp-DOCUMENTATION-帮助和文档" class="headerlink" title="HELP &amp; DOCUMENTATION             帮助和文档"></a>HELP &amp; DOCUMENTATION             帮助和文档</h2><ul>
+<li><strong>Get help on the command line         在命令行上获取帮助</strong><ul>
+<li><code>$ git help &lt;command&gt;</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="FREE-ONLINE-RESOURCES-免费在线资源"><a href="#FREE-ONLINE-RESOURCES-免费在线资源" class="headerlink" title="FREE ONLINE RESOURCES         免费在线资源"></a>FREE ONLINE RESOURCES         免费在线资源</h2><p><em><a href="http://www.git-tower.com/learn" target="_blank" rel="noopener">http://www.git-tower.com/learn</a></em><br><em><a href="http://rogerdudler.github.io/git-guide/" target="_blank" rel="noopener">http://rogerdudler.github.io/git-guide/</a></em><br><em><a href="http://www.git-scm.org/" target="_blank" rel="noopener">http://www.git-scm.org/</a></em></p>
+</div><div class="tags"><a href="/tags/Git/"><i class="fa fa-tag"></i>Git</a></div><div class="post-nav"><a class="pre" href="/%E5%8D%9A%E5%AE%A2/2019-06-10-%E8%BD%AC-%E5%A4%A7%E9%81%93%E8%87%B3%E7%AE%80%E2%80%94%E2%80%94Hexo%E7%AE%80%E6%B4%81%E4%B8%BB%E9%A2%98%E6%8E%A8%E8%8D%90.html">转-大道至简——Hexo简洁主题推荐</a><a class="next" href="/%E5%8D%9A%E5%AE%A2/2019-06-03-%E8%BF%81%E7%A7%BBCSDN%E6%96%87%E7%AB%A0%E5%88%B0%E6%9C%AC%E5%9C%B0hexo.html">迁移CSDN文章到本地hexo</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="share.foreversfj.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%80%E8%83%BD/">技能</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/Git/" style="font-size: 15px;">Git</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/Nginx/" style="font-size: 15px;">Nginx</a> <a href="/tags/Tomcat/" style="font-size: 15px;">Tomcat</a> <a href="/tags/%E6%9A%97%E7%BD%91/" style="font-size: 15px;">暗网</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0.html">Hexo新建文章</a></li><li class="post-list-item"><a class="post-list-link" href="/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E9%85%8D%E7%BD%AE%E4%BC%98%E5%8C%96.html">Hexo配置优化</a></li><li class="post-list-item"><a class="post-list-link" href="/%E5%8D%9A%E5%AE%A2/2020-04-28-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html">Hexo搭建个人博客</a></li><li class="post-list-item"><a class="post-list-link" href="/Linux/2020-04-27-Nginx%E4%BC%98%E5%8C%96%E9%85%8D%E7%BD%AE.html">Nginx优化配置</a></li><li class="post-list-item"><a class="post-list-link" href="/Linux/2020-04-27-Nginx%E5%85%A5%E9%97%A8%E9%85%8D%E7%BD%AE.html">Nginx入门配置</a></li><li class="post-list-item"><a class="post-list-link" href="/Linux/2020-04-27-Tomcat%E6%97%A5%E5%BF%97%E9%85%8D%E7%BD%AE.html">Tomcat日志配置</a></li><li class="post-list-item"><a class="post-list-link" href="/Linux/2020-04-27-Tomcat%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8.html">Tomcat入门使用</a></li><li class="post-list-item"><a class="post-list-link" href="/Linux/2020-04-27-%E5%85%A8%E6%96%B0Linux%E4%BD%BF%E7%94%A8%E5%85%A5%E5%8F%A3.html">全新Linux使用入口</a></li><li class="post-list-item"><a class="post-list-link" href="/%E6%8A%80%E8%83%BD/2019-06-29-%E5%A6%82%E4%BD%95%E8%AE%BF%E9%97%AE%E9%BB%91%E6%9A%97%E7%BD%91%E7%BB%9C.html">如何访问黑暗网络（Deep Web）</a></li><li class="post-list-item"><a class="post-list-link" href="/%E5%8D%9A%E5%AE%A2/2019-06-10-%E8%BD%AC-%E5%A4%A7%E9%81%93%E8%87%B3%E7%AE%80%E2%80%94%E2%80%94Hexo%E7%AE%80%E6%B4%81%E4%B8%BB%E9%A2%98%E6%8E%A8%E8%8D%90.html">转-大道至简——Hexo简洁主题推荐</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">foreverSFJ.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
