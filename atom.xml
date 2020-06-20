@@ -320,6 +320,29 @@
   </entry>
   
   <entry>
+    <title>SSM整合</title>
+    <link href="https://share.foreversfj.com/%E6%A1%86%E6%9E%B6/2019-06-07-SSM%E6%95%B4%E5%90%88.html"/>
+    <id>https://share.foreversfj.com/%E6%A1%86%E6%9E%B6/2019-06-07-SSM%E6%95%B4%E5%90%88.html</id>
+    <published>2019-06-07T11:50:32.000Z</published>
+    <updated>2020-06-20T07:55:36.772Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="SSM整合"><a href="#SSM整合" class="headerlink" title="SSM整合"></a>SSM整合</h1><h2 id="SSM的概念"><a href="#SSM的概念" class="headerlink" title="SSM的概念"></a>SSM的概念</h2><p>SSM即是 SpringMVC + Spring + Mybatis 的框架组合，使用这一套组合可以满足最基本的数据库、页面和业务逻辑的项目需求。</p>]]></content>
+    
+    <summary type="html">
+    
+      SSM框架的基本使用
+    
+    </summary>
+    
+    
+      <category term="框架" scheme="https://share.foreversfj.com/categories/%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="SSM" scheme="https://share.foreversfj.com/tags/SSM/"/>
+    
+  </entry>
+  
+  <entry>
     <title>迁移CSDN文章到本地hexo</title>
     <link href="https://share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2019-06-03-%E8%BF%81%E7%A7%BBCSDN%E6%96%87%E7%AB%A0%E5%88%B0%E6%9C%AC%E5%9C%B0hexo.html"/>
     <id>https://share.foreversfj.com/%E5%8D%9A%E5%AE%A2/2019-06-03-%E8%BF%81%E7%A7%BBCSDN%E6%96%87%E7%AB%A0%E5%88%B0%E6%9C%AC%E5%9C%B0hexo.html</id>

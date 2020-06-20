@@ -50,7 +50,7 @@ button.submit {
 a:hover,
 a:active {
   color: #DC143C;
-  font-weight: bold; }
+  text-shadow: 0 0.5px #666, 0 0.5px #666; }
 
 a:focus {
   outline: auto; }
@@ -91,7 +91,7 @@ div {
       display: inline-block;
       padding: 3px 20px 3px;
       line-height: 30px;
-      color: #444;
+      color: #111;
       font-size: 16px;
       border: 1px solid transparent; }
       #header #nav-menu a:hover {
@@ -134,7 +134,10 @@ div {
       padding: 0; }
       #sidebar .widget ul li {
         margin: 5px 0;
-        line-height: 1.5; }
+        line-height: 1.5;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap; }
     #sidebar .widget .category-list-count {
       padding-left: 5px;
       color: #6E7173; }
@@ -1420,11 +1423,12 @@ figure.highlight,
   float: right; }
   #toc .toc {
     padding: 0;
-    margin: 0.5em;
+    margin: 0.5em 0;
     line-height: 1.8em; }
     #toc .toc li {
       list-style-type: none; }
   #toc .toc-child {
+    font-size: 0.8em;
     margin-left: 1em;
     padding-left: 0; }
 
